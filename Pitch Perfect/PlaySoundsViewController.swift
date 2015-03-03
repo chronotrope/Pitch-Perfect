@@ -69,11 +69,27 @@ class PlaySoundsViewController: UIViewController {
         //good practice to stop audio player before you start it
         audioPlayer.stop()
         audioPlayer.rate = 0.5
+        audioPlayer.currentTime = 0.0
         audioPlayer.play()
-        println("Finished playing the song")
-       
-        
+        println("Finished playing slow audio")
         
         
     }
+    
+    @IBAction func playFastAudio(sender: UIButton) {
+        
+        audioPlayer.stop()
+        audioPlayer.rate = 2.0
+        audioPlayer.currentTime = 0.0
+        audioPlayer.play()
+        println("Finished playing fast audio")
+
+    }
+    
+    @IBAction func stopAudioPlayer(sender: UIButton) {
+        audioPlayer.stop()
+        println("I stopped audio player")
+    }
+    
+    
 }
