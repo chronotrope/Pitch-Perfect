@@ -11,6 +11,12 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
     var audioPlayer: AVAudioPlayer!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,17 +60,7 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func playSlowAudio(sender: UIButton) {
         // Play audio sloooowly here...
         
-        /**
-        // code from techbus.safari.com ios 8 swift cookbook
-        
-        let mainBundle = NSBundle.mainBundle()
-        let filePath = mainBundle.pathForResource("movie_quote", ofType:"mp3")
-        let path = filePath
-        let fileData = NSData(contentsOfFile: path!)
-        var error:NSError?
-        self.audioPlayer = AVAudioPlayer(data: fileData, error: &error)
-        self.audioPlayer?.play() 
-        */
+
         // code from Udacity.com below
         //good practice to stop audio player before you start it
         audioPlayer.stop()
