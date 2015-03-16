@@ -34,36 +34,53 @@
                                     <rect key="frame" x="158" y="499" width="85" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7Q-LJ-xeQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="09t-QG-z16"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="WdW-Up-zpx" secondAttribute="centerX" constant="-0.5" id="LPr-9u-CO6"/>
                             <constraint firstAttribute="centerY" secondItem="Npg-VL-JsT" secondAttribute="centerY" constant="-112" id="RAh-Bb-H09"/>
                             <constraint firstItem="WdW-Up-zpx" firstAttribute="top" secondItem="Npg-VL-JsT" secondAttribute="bottom" constant="37" id="SHU-tv-dQj"/>
+                            <constraint firstAttribute="centerX" secondItem="e7Q-LJ-xeQ" secondAttribute="centerX" id="WsY-MD-MOW"/>
                             <constraint firstAttribute="centerX" secondItem="Npg-VL-JsT" secondAttribute="centerX" constant="-19.5" id="rKm-LI-Gtx"/>
+                            <constraint firstItem="e7Q-LJ-xeQ" firstAttribute="top" secondItem="Npg-VL-JsT" secondAttribute="bottom" constant="75" id="t49-Je-Vhi"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Npg-VL-JsT"/>
                                 <exclude reference="WdW-Up-zpx"/>
+                                <exclude reference="e7Q-LJ-xeQ"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="RAh-Bb-H09"/>
                                 <exclude reference="rKm-LI-Gtx"/>
                                 <exclude reference="LPr-9u-CO6"/>
                                 <exclude reference="SHU-tv-dQj"/>
+                                <exclude reference="WsY-MD-MOW"/>
+                                <exclude reference="t49-Je-Vhi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Npg-VL-JsT"/>
                                 <include reference="WdW-Up-zpx"/>
+                                <include reference="e7Q-LJ-xeQ"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="RAh-Bb-H09"/>
                                 <include reference="rKm-LI-Gtx"/>
                                 <include reference="LPr-9u-CO6"/>
                                 <include reference="SHU-tv-dQj"/>
+                                <include reference="WsY-MD-MOW"/>
+                                <include reference="t49-Je-Vhi"/>
                             </mask>
                         </variation>
                     </view>
@@ -77,5 +94,6 @@
     </scenes>
     <resources>
         <image name="microphone-Udacity" width="100" height="100"/>
+        <image name="stop" width="50" height="50"/>
     </resources>
 </document>
