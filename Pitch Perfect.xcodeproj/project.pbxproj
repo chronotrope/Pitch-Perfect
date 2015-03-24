@@ -41,7 +41,7 @@
 		45A46EC71A8754AB00992D28 /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A46ECC1A8754AB00992D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45A46ECD1A8754AB00992D28 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
-		45C822601AC12EE6003CCE96 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		45C822601AC12EE6003CCE96 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaySoundsViewController.swift; path = ../PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		45C822621AC13350003CCE96 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		45C822641AC143F4003CCE96 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				45C822641AC143F4003CCE96 /* .gitignore */,
-				45C822601AC12EE6003CCE96 /* PlaySoundsViewController.swift */,
 				45A46EB41A8754AB00992D28 /* Pitch Perfect */,
 				45A46ECA1A8754AB00992D28 /* Pitch PerfectTests */,
 				45A46EB31A8754AB00992D28 /* Products */,
@@ -87,6 +86,7 @@
 		45A46EB41A8754AB00992D28 /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				45C822601AC12EE6003CCE96 /* PlaySoundsViewController.swift */,
 				45A46EB71A8754AB00992D28 /* AppDelegate.swift */,
 				45A46EB91A8754AB00992D28 /* ViewController.swift */,
 				453D94491AAEF0010066A5BD /* RecordSoundsViewController.swift */,
