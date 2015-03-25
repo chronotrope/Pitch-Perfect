@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iJU-ct-rJX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -38,8 +39,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="09t-QG-z16"/>
-                                    <segue destination="mcb-RX-HAI" kind="show" id="lmc-hs-naA"/>
+                                    <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uyz-k5-u61"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -87,7 +87,8 @@
                     <connections>
                         <outlet property="recordButton" destination="Npg-VL-JsT" id="ECP-LL-XXg"/>
                         <outlet property="recordingInProgress" destination="WdW-Up-zpx" id="nZ5-bF-5K4"/>
-                        <outlet property="stopButton" destination="e7Q-LJ-xeQ" id="aPh-dU-EKD"/>
+                        <outlet property="stopButton" destination="e7Q-LJ-xeQ" id="d2y-zy-7dp"/>
+                        <segue destination="mcb-RX-HAI" kind="show" identifier="stopRecording" id="xr0-wu-WHQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -157,13 +158,13 @@
                                 <exclude reference="5Kx-42-P4Z"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="66E-bN-sFM"/>
                                 <exclude reference="AEc-xc-qgF"/>
                                 <exclude reference="gGf-OP-jNx"/>
+                                <exclude reference="mdA-yO-sE5"/>
                                 <exclude reference="NBF-2E-uKA"/>
                                 <exclude reference="U3a-MS-52w"/>
                                 <exclude reference="Yo1-XH-s34"/>
-                                <exclude reference="mdA-yO-sE5"/>
-                                <exclude reference="66E-bN-sFM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -173,13 +174,13 @@
                                 <include reference="5Kx-42-P4Z"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="66E-bN-sFM"/>
                                 <include reference="AEc-xc-qgF"/>
                                 <include reference="gGf-OP-jNx"/>
+                                <include reference="mdA-yO-sE5"/>
                                 <include reference="NBF-2E-uKA"/>
                                 <include reference="U3a-MS-52w"/>
                                 <include reference="Yo1-XH-s34"/>
-                                <include reference="mdA-yO-sE5"/>
-                                <include reference="66E-bN-sFM"/>
                             </mask>
                         </variation>
                     </view>
