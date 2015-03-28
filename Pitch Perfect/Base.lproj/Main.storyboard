@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iJU-ct-rJX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iJU-ct-rJX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -140,6 +140,15 @@
                                     <action selector="stopAudioPlayer:" destination="mcb-RX-HAI" eventType="touchUpInside" id="g7K-5m-nEz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lik-Qa-Ucp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="chipmunkButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="mcb-RX-HAI" eventType="touchUpInside" id="CNT-fb-Vve"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -147,8 +156,10 @@
                             <constraint firstItem="2of-sH-hCR" firstAttribute="top" secondItem="ZLS-gy-V0y" secondAttribute="bottom" constant="50" id="AEc-xc-qgF"/>
                             <constraint firstItem="HF6-Oe-LNe" firstAttribute="leading" secondItem="2of-sH-hCR" secondAttribute="trailing" constant="34" id="NBF-2E-uKA"/>
                             <constraint firstItem="HF6-Oe-LNe" firstAttribute="top" secondItem="ZLS-gy-V0y" secondAttribute="bottom" constant="50" id="U3a-MS-52w"/>
+                            <constraint firstItem="lik-Qa-Ucp" firstAttribute="top" secondItem="2of-sH-hCR" secondAttribute="bottom" constant="87" id="Xeu-dP-OxO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HF6-Oe-LNe" secondAttribute="trailing" constant="30" id="Yo1-XH-s34"/>
                             <constraint firstItem="2of-sH-hCR" firstAttribute="leading" secondItem="abe-xX-8fe" secondAttribute="leadingMargin" constant="19" id="gGf-OP-jNx"/>
+                            <constraint firstItem="lik-Qa-Ucp" firstAttribute="leading" secondItem="abe-xX-8fe" secondAttribute="leadingMargin" constant="24" id="gZb-fW-Xwl"/>
                             <constraint firstItem="5Kx-42-P4Z" firstAttribute="leading" secondItem="abe-xX-8fe" secondAttribute="leadingMargin" constant="157" id="mdA-yO-sE5"/>
                         </constraints>
                         <variation key="default">
@@ -156,15 +167,18 @@
                                 <exclude reference="HF6-Oe-LNe"/>
                                 <exclude reference="2of-sH-hCR"/>
                                 <exclude reference="5Kx-42-P4Z"/>
+                                <exclude reference="lik-Qa-Ucp"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="66E-bN-sFM"/>
                                 <exclude reference="AEc-xc-qgF"/>
                                 <exclude reference="gGf-OP-jNx"/>
-                                <exclude reference="mdA-yO-sE5"/>
                                 <exclude reference="NBF-2E-uKA"/>
                                 <exclude reference="U3a-MS-52w"/>
                                 <exclude reference="Yo1-XH-s34"/>
+                                <exclude reference="Xeu-dP-OxO"/>
+                                <exclude reference="gZb-fW-Xwl"/>
+                                <exclude reference="mdA-yO-sE5"/>
+                                <exclude reference="66E-bN-sFM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -172,15 +186,18 @@
                                 <include reference="HF6-Oe-LNe"/>
                                 <include reference="2of-sH-hCR"/>
                                 <include reference="5Kx-42-P4Z"/>
+                                <include reference="lik-Qa-Ucp"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="66E-bN-sFM"/>
                                 <include reference="AEc-xc-qgF"/>
                                 <include reference="gGf-OP-jNx"/>
-                                <include reference="mdA-yO-sE5"/>
                                 <include reference="NBF-2E-uKA"/>
                                 <include reference="U3a-MS-52w"/>
                                 <include reference="Yo1-XH-s34"/>
+                                <include reference="Xeu-dP-OxO"/>
+                                <include reference="gZb-fW-Xwl"/>
+                                <include reference="mdA-yO-sE5"/>
+                                <include reference="66E-bN-sFM"/>
                             </mask>
                         </variation>
                     </view>
@@ -209,6 +226,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunkButton" width="100" height="100"/>
         <image name="fastButton" width="100" height="100"/>
         <image name="microphone-Udacity" width="100" height="100"/>
         <image name="slowButton" width="100" height="100"/>
