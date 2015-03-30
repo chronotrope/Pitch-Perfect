@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		453D944A1AAEF0010066A5BD /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D94491AAEF0010066A5BD /* RecordSoundsViewController.swift */; };
+		457475E21AC9108D00716E7E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 457475E11AC9108D00716E7E /* README.md */; };
 		45A46EB81A8754AB00992D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A46EB71A8754AB00992D28 /* AppDelegate.swift */; };
 		45A46EBA1A8754AB00992D28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A46EB91A8754AB00992D28 /* ViewController.swift */; };
 		45A46EBD1A8754AB00992D28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A46EBB1A8754AB00992D28 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		453D94491AAEF0010066A5BD /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
+		457475E11AC9108D00716E7E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45A46EB21A8754AB00992D28 /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A46EB61A8754AB00992D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45A46EB71A8754AB00992D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		45A46EB41A8754AB00992D28 /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				457475E11AC9108D00716E7E /* README.md */,
 				45C822661AC26B18003CCE96 /* PlaySoundsViewController.swift */,
 				45A46EB71A8754AB00992D28 /* AppDelegate.swift */,
 				45A46EB91A8754AB00992D28 /* ViewController.swift */,
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457475E21AC9108D00716E7E /* README.md in Sources */,
 				45A46EBA1A8754AB00992D28 /* ViewController.swift in Sources */,
 				453D944A1AAEF0010066A5BD /* RecordSoundsViewController.swift in Sources */,
 				45C822671AC26B18003CCE96 /* PlaySoundsViewController.swift in Sources */,
