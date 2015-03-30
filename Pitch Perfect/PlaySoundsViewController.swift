@@ -44,11 +44,7 @@ class PlaySoundsViewController: UIViewController {
     
 
     @IBAction func playSlowAudio(sender: UIButton) {
-        // Play audio sloooowly here...
-        
-        
-        // code from Udacity.com below
-        //good practice to stop audio player before you start it
+        audioEngineStopReset()
         audioPlayer.stop()
         audioPlayer.rate = 0.5
         audioPlayer.currentTime = 0.0
@@ -57,11 +53,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playFastAudio(sender: UIButton) {
-        // Play fast audio here...
-        
-        
-        // code from Udacity.com below
-        //good practice to stop audio player before you start it
+        audioEngineStopReset()
         audioPlayer.stop()
         audioPlayer.rate = 2.0
         audioPlayer.currentTime = 0.0
@@ -79,10 +71,14 @@ class PlaySoundsViewController: UIViewController {
         playAudioWithVariablePitch(1000)
     }
     
-    func playAudioWithVariablePitch(pitch: Float){
-        audioPlayer.stop()
+    func audioEngineStopReset(){
         audioEngine.stop()
         audioEngine.reset()
+    }
+    
+    func playAudioWithVariablePitch(pitch: Float){
+        audioPlayer.stop()
+        audioEngineStopReset()
         
         var audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
