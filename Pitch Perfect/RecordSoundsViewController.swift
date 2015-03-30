@@ -34,7 +34,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,21 +43,14 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     override func viewWillAppear(animated: Bool) {
-        //Hide the stop button
-        stopButton.hidden = true
-        recordButton.enabled = true
+        resetRecordingView()    
+        
     }
     
     
     @IBAction func recordAudio(sender: UIButton) {
-        //TODO:  Show text "recording in progress"
-        recordingInProgress.hidden = false
-        stopButton.hidden = false
-        
-        //TODO:  Record the user's voice
-        println("in recordAudio")
-        recordButton.enabled = false
-        //Inside func recordAudio(sender: UIButton)
+
+        updateRecordingView()
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         
         let currentDateTime = NSDate()
@@ -103,6 +96,25 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         
     }
    
+    func updateRecordingView() {
+        //display the stop button
+        stopButton.enabled = true
+        stopButton.hidden = false
+        //disable the record button
+        recordButton.enabled = false
+        recordingInProgress.text = "Recording..."
+        
+        
+    }
+    
+    func resetRecordingView() {
+        stopButton.hidden = true
+        recordButton.enabled = true
+        recordingInProgress.hidden = false
+        recordingInProgress.text = "Tap to Record"
+        
+    }
+    
     
     @IBAction func stopAudio(sender: UIButton) {
         

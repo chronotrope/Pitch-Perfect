@@ -27,11 +27,14 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tlb-4K-SWz"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdW-Up-zpx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdW-Up-zpx">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="162" y="499" width="77" height="21"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7Q-LJ-xeQ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -145,6 +148,9 @@
                                 <state key="normal" title="Button" image="chipmunkButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="301" width="142" height="100"/>
+                                </variation>
                                 <connections>
                                     <action selector="playChipmunkAudio:" destination="mcb-RX-HAI" eventType="touchUpInside" id="CNT-fb-Vve"/>
                                 </connections>
@@ -154,6 +160,9 @@
                                 <state key="normal" title="Button" image="darthvaderButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="199" y="296" width="155" height="100"/>
+                                </variation>
                                 <connections>
                                     <action selector="playDarthvaderAudio:" destination="mcb-RX-HAI" eventType="touchUpInside" id="3EK-Fd-UVA"/>
                                 </connections>
@@ -162,16 +171,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jzX-Qg-aEg" firstAttribute="top" secondItem="HF6-Oe-LNe" secondAttribute="bottom" constant="82" id="2pk-tg-tvC"/>
+                            <constraint firstItem="jzX-Qg-aEg" firstAttribute="leading" secondItem="lik-Qa-Ucp" secondAttribute="trailing" constant="17" id="31Z-8k-47j"/>
                             <constraint firstItem="7f9-Nz-2Hz" firstAttribute="top" secondItem="5Kx-42-P4Z" secondAttribute="bottom" constant="61" id="66E-bN-sFM"/>
                             <constraint firstItem="2of-sH-hCR" firstAttribute="top" secondItem="ZLS-gy-V0y" secondAttribute="bottom" constant="50" id="AEc-xc-qgF"/>
                             <constraint firstItem="HF6-Oe-LNe" firstAttribute="leading" secondItem="2of-sH-hCR" secondAttribute="trailing" constant="34" id="NBF-2E-uKA"/>
                             <constraint firstItem="HF6-Oe-LNe" firstAttribute="top" secondItem="ZLS-gy-V0y" secondAttribute="bottom" constant="50" id="U3a-MS-52w"/>
                             <constraint firstItem="lik-Qa-Ucp" firstAttribute="top" secondItem="2of-sH-hCR" secondAttribute="bottom" constant="87" id="Xeu-dP-OxO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HF6-Oe-LNe" secondAttribute="trailing" constant="30" id="Yo1-XH-s34"/>
-                            <constraint firstItem="2of-sH-hCR" firstAttribute="leading" secondItem="abe-xX-8fe" secondAttribute="leadingMargin" constant="19" id="gGf-OP-jNx"/>
-                            <constraint firstItem="lik-Qa-Ucp" firstAttribute="leading" secondItem="abe-xX-8fe" secondAttribute="leadingMargin" constant="24" id="gZb-fW-Xwl"/>
+                            <constraint firstItem="2of-sH-hCR" firstAttribute="leading" secondItem="abe-xX-8fe" secondAttribute="leadingMargin" constant="30" id="gGf-OP-jNx"/>
+                            <constraint firstItem="lik-Qa-Ucp" firstAttribute="leading" secondItem="abe-xX-8fe" secondAttribute="leadingMargin" constant="30" id="gZb-fW-Xwl"/>
                             <constraint firstItem="5Kx-42-P4Z" firstAttribute="leading" secondItem="abe-xX-8fe" secondAttribute="leadingMargin" constant="157" id="mdA-yO-sE5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jzX-Qg-aEg" secondAttribute="trailing" constant="17" id="xZ9-NE-QDy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jzX-Qg-aEg" secondAttribute="trailing" constant="30" id="xZ9-NE-QDy"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -190,6 +200,7 @@
                                 <exclude reference="Xeu-dP-OxO"/>
                                 <exclude reference="gZb-fW-Xwl"/>
                                 <exclude reference="2pk-tg-tvC"/>
+                                <exclude reference="31Z-8k-47j"/>
                                 <exclude reference="xZ9-NE-QDy"/>
                                 <exclude reference="mdA-yO-sE5"/>
                                 <exclude reference="66E-bN-sFM"/>
@@ -212,6 +223,7 @@
                                 <include reference="Xeu-dP-OxO"/>
                                 <include reference="gZb-fW-Xwl"/>
                                 <include reference="2pk-tg-tvC"/>
+                                <include reference="31Z-8k-47j"/>
                                 <include reference="xZ9-NE-QDy"/>
                                 <include reference="mdA-yO-sE5"/>
                                 <include reference="66E-bN-sFM"/>
