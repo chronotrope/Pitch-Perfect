@@ -102,7 +102,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         stopButton.hidden = false
         //disable the record button
         recordButton.enabled = false
-        recordingInProgress.text = "Recording..."
+        recordingInProgress.text = "Recording in Progress"
         
         
     }
